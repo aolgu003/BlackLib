@@ -22,7 +22,7 @@ set(example_sources ./examples.cpp)
 add_compile_options(-std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -pthread -D__GXX_EXPERIMENTAL_CXX0X__ -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 )
 
 # Set include directories for all targets
-include_directories(/usr/arm-linux-gnueabi/include/c++/4.6.3)
+include_directories(/usr/arm-linux-gnueabihf/include/c++/5)
 
 add_library(black SHARED ${sources})
 set_property(TARGET black PROPERTY POSITION_INDEPENDENT_CODE ON)
