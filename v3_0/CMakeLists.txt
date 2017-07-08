@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(BlackLib)
 
-SET(CMAKE_C_COMPILER   arm-linux-gnueabi-gcc)
-SET(CMAKE_CXX_COMPILER arm-linux-gnueabi-g++)
+SET(CMAKE_C_COMPILER   arm-linux-gnueabihf-gcc)
+SET(CMAKE_CXX_COMPILER arm-linux-gnueabihf-g++)
 
 ###############################################################################
 ## file globbing ##############################################################
