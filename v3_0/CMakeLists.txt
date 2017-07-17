@@ -27,12 +27,12 @@ include_directories(/usr/arm-linux-gnueabihf/include/c++/5)
 add_library(black SHARED ${sources})
 set_property(TARGET black PROPERTY POSITION_INDEPENDENT_CODE ON)
 
-add_executable(black_example ${example_sources})
+#add_executable(black_example ${example_sources})
 
 target_link_libraries(black pthread)
 
 # Link example with libblack
-target_link_libraries(black_example pthread black)
+#target_link_libraries(black_example pthread black)
 
 # Include directories for black_example only
-target_include_directories(black_example PUBLIC ${CMAKE_SOURCE_DIR})
+#target_include_directories(black_example PUBLIC ${CMAKE_SOURCE_DIR})
